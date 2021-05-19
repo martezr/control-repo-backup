@@ -27,6 +27,6 @@ File { backup => false }
 node default {
   if $trusted['extensions']['pp_role'] {
     $role = $trusted['extensions']['pp_role']
-    include "role::${::role}"
+    include "role::${role}"
   }
 }
