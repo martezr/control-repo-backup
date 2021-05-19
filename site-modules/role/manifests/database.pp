@@ -1,3 +1,3 @@
-class role::database_server {  
+class role::database {  
   include profile::base_linux
 }
