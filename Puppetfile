@@ -34,3 +34,6 @@ mod 'puppetlabs/mailalias_core', '1.0.6'
 mod 'puppetlabs/mount_core', '1.0.4'
 mod 'puppetlabs/ntp', '8.5.0'
 mod 'puppetlabs/reboot', '2.4.0'
+
+# Node decommissioning
+mod 'nate-purge_node', '1.4.0'
