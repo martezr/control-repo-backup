@@ -1,7 +1,9 @@
 class role::database {  
   include profile::base_linux
   class { 'postgresql::server':
-    postgres_password => 'TPSrep0rt!',
+    ip_mask_allow_all_users => '0.0.0.0/0',
+    listen_addresses        => '0.0.0.0',
+    postgres_password       => 'TPSrep0rt!',
   }
    firewall { '015 postgresql port':
     chain  => 'INPUT',
