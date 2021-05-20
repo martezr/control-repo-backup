@@ -4,4 +4,12 @@ class profile::base_linux {
       profile_type  => 'server',
       allow_users   => ['trusteduser'],
    }
+   firewall { '010 ssh port':
+    chain  => 'INPUT',
+    dport  => 22,
+    state  => 'NEW',
+    action => 'accept',
+    proto  => 'tcp',
+    tag    => 'cis_firewall_rule',
+  }
 }
