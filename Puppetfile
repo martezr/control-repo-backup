@@ -11,6 +11,10 @@ mod 'puppetlabs/concat', '7.0.1'
 mod 'camptocamp/openssl', '1.14.0'
 mod 'puppet-vault_lookup', '0.1.1'
 
+# Nginx
+mod 'puppet/nginx', '3.0.0'
+mod 'puppetlabs/translate', '2.2.0'
+
 # Consul
 mod 'KyleAnderson/consul', '7.0.0'
 mod 'camptocamp/systemd', '3.0.0'
