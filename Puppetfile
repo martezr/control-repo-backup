@@ -5,12 +5,18 @@ mod 'kuma',
   git: 'https://github.com/martezr/puppet-kuma.git',
   ref: 'main'
 mod 'puppetlabs/stdlib', '6.6.0'
-mod 'puppet/archive', '4.6.0'
 mod 'puppetlabs/postgresql', '7.0.2'
 mod 'puppetlabs/apt', '8.0.2'
 mod 'puppetlabs/concat', '7.0.1'
 mod 'camptocamp/openssl', '1.14.0'
 mod 'puppet-vault_lookup', '0.1.1'
+
+# Consul
+mod 'KyleAnderson/consul', '7.0.0'
+mod 'camptocamp/systemd', '3.0.0'
+mod 'puppet/archive', '5.0.0'
+mod 'puppet/hashi_stack', '2.0.0'
+mod 'puppetlabs/inifile', '5.0.1'
 
 # CIS
 mod 'fervid/secure_linux_cis', '2.1.18'
