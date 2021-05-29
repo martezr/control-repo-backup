@@ -12,4 +12,9 @@ class profile::base_linux {
     proto  => 'tcp',
     tag    => 'cis_firewall_rule',
   }
+  include hashi_stack::repo
+  package { 'vault':
+    ensure  => installed,
+    require => Class['Hashi_stack::Repo'],
+  }
 }
