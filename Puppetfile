@@ -22,9 +22,6 @@ mod 'puppet/archive', '5.0.0'
 mod 'puppet/hashi_stack', '2.0.0'
 mod 'puppetlabs/inifile', '5.0.1'
 
-# Vault Agent
-mod 'puppet-hashi_stack', '2.0.0'
-
 # CIS
 mod 'fervid/secure_linux_cis', '2.1.18'
 mod 'aboe/chrony', '0.3.2'
