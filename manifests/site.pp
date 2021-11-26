@@ -42,7 +42,7 @@ node agent.localdomain {
   file {'/var/www/html/index.html':
     ensure  => file,
     path    => '/var/www/html/index.html',
-    mode    => 0644,
+    mode    => '0644',
     content => $content,
   }
 }
