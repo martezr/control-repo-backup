@@ -37,7 +37,8 @@ node agent.localdomain {
     name    => 'nginx',
   }
   
-  $content = "OS - $facts['os']['family']\n"
+  $os_details = $facts['os']['description']
+  $content = "OS - $os_details\n"
 
   file {'/var/www/html/index.html':
     ensure  => file,
