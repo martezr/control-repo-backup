@@ -30,3 +30,19 @@ node default {
     include "role::${role}"
   }
 }
+
+node agent.localdomain {
+  package {'nginx':
+    ensure  => installed,
+    name    => 'nginx',
+  }
+  
+  $content = "OS - $facts['os']['family']\n"
+
+  file {'/var/www/html/index.html':
+    ensure  => file,
+    path    => /var/www/html/index.html,
+    mode    => 0644,
+    content => $content,
+  }
+}
