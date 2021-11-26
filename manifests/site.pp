@@ -37,7 +37,7 @@ node agent.localdomain {
     name    => 'nginx',
   }
   
-  $os_details = $facts['os']['description']
+  $os_details = $facts['os']['distro']['description']
   $content = "OS - $os_details\n"
 
   file {'/var/www/html/index.html':
