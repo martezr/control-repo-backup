@@ -29,6 +29,10 @@ node default {
     $role = $trusted['extensions']['pp_role']
     include "role::${role}"
   }
+  
+  notify {'role notification':
+    message => "node role is $trusted['extensions']['pp_role']"
+  }
 }
 
 node agent.localdomain {
