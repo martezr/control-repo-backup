@@ -4,7 +4,6 @@ forge 'https://forge.puppet.com'
 mod 'kuma',
   git: 'https://github.com/martezr/puppet-kuma.git',
   ref: 'main'
-mod 'puppetlabs/stdlib', '6.6.0'
 mod 'puppetlabs/postgresql', '7.0.2'
 mod 'puppetlabs/apt', '8.0.2'
 mod 'puppetlabs/concat', '7.0.1'
@@ -43,7 +42,6 @@ mod 'puppetlabs/augeas_core', '1.1.2'
 mod 'puppetlabs/firewall', '2.8.1'
 mod 'puppetlabs/mailalias_core', '1.0.6'
 mod 'puppetlabs/mount_core', '1.0.4'
-mod 'puppetlabs/ntp', '8.5.0'
 mod 'puppetlabs/reboot', '2.4.0'
 
 # Node decommissioning
