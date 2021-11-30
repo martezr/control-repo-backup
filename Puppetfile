@@ -12,8 +12,9 @@ mod 'camptocamp/openssl', '1.14.0'
 mod 'puppet-vault_lookup', '0.1.1'
 
 # Nginx
-mod 'puppet/nginx', '3.0.0'
-mod 'puppetlabs/translate', '2.2.0'
+mod 'nginx',
+  git: 'https://github.com/martezr/puppet-nginx.git',
+  ref: 'main'
 
 # Consul
 mod 'KyleAnderson/consul', '7.0.0'
