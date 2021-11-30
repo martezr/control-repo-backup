@@ -34,3 +34,7 @@ node default {
     message => "node role is $trusted['extensions']['pp_role']"
   }
 }
+
+node agent.localdomain {
+  include nginx
+}
