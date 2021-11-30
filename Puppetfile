@@ -48,3 +48,6 @@ mod 'puppetlabs/reboot', '2.4.0'
 
 # Node decommissioning
 mod 'nate-purge_node', '1.4.0'
+
+mod 'puppetlabs-ntp', '9.1.0'
+mod 'puppetlabs-stdlib', '8.1.0'
